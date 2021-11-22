@@ -279,7 +279,7 @@ def main_win():
     root.mainloop() 
 
 
-bt = Button(mainwin,text="Research Report ....!!!",command=main_win)
+bt = Button(mainwin,text="Click to Launch Research Report ....!!!",command=main_win)
 bt.grid(row=0,column=0)
 #--------------------------------------------------------------------------------------------------------------------
 
