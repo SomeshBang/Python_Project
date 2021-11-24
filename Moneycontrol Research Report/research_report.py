@@ -12,15 +12,16 @@ ff = "{Georgia} 15"
 
 #------Basic ---------------------
 mainwin = Tk()
-mainwin.geometry("200x100+10+10")
+mainwin.geometry("220x100+10+10")
 
 #--------------------------------------------------------------------------------------------------------------------
 def main_win():
+    messagebox.showinfo("Notification","Please wait its generating report.....!!")
     broker_res = []
     br_lst = []
     stock_res = []
     st_lst = []
-    root = Toplevel()
+    root = Tk()
     root.geometry("1350x720+5+5")
     root.configure(bg=b)
     root.title("Research Report from Money Control")
@@ -275,6 +276,7 @@ def main_win():
     cb_stk.place(relx=0.005,rely=0.113)
     cb_stk.bind('<<ComboboxSelected>>',stock_filter)
 
+    messagebox.showinfo("Notification","Click on get result")
     #-------Finalization--------------------
     root.mainloop() 
 
